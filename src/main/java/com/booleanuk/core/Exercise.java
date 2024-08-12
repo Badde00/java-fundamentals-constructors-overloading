@@ -4,7 +4,6 @@ import com.booleanuk.helpers.ExerciseBase;
 
 public class Exercise extends ExerciseBase {
     public String name;
-
     /*
         A class "constructor" runs whenever we create a new instance of a class. You can think of it like a method
         that automatically runs when you create an instance. We can even define parameters, just like we can with methods!
@@ -52,19 +51,27 @@ public class Exercise extends ExerciseBase {
         provided to the name and age members
      */
 
+    public Exercise(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
 
     /*
         2. Create a method named add that accepts two integers. The method should return the numbers added together.
      */
 
-
+    public int add(int a, int b) {
+        return a + b;
+    }
 
     /*
         3. Create another method named add that accepts two Strings. The method should return the strings concatenated
         together with a space in between.
      */
 
-
+    public String add(String a, String b) {
+        return a + " " + b;
+    }
 
 }
